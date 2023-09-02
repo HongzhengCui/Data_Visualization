@@ -23,6 +23,6 @@ The HTML file for this project can be accessed [here](https://hongzhengcui.githu
 The data used for this project was sourced from [Kaggle](https://www.kaggle.com/datasets/syuzai/schools-in-western-australia) and contains information about schooling and ranking data Australia.
 
 ## Conclusion
-These two data visualization projects are made on two different platforms. Feel free to explore the provided links to interact with the visualizations and gain a deeper understanding of the skills and data. If you have any questions or feedback, please don't hesitate to reach out to [hongzheng0926@gmail.com].
+These two data visualization projects are made on two different platforms. Feel free to explore the provided links to interact with the visualizations and gain a deeper understanding of the skills and data. If you have any questions or feedback, please don't hesitate to reach out to hongzheng0926@gmail.com.
 
-Enjoy exploring the data!
+**Enjoy exploring the projects!**
