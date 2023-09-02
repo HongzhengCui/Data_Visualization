@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text":"Median Bettereducation score and ratio of schools Bettereducation score > 90 (2019)","fontSize":12,"align": "center"},
+  "width": 250,
+  "height": 230,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Charliechzzz/Chart/main/data/medianchart.csv"
+  },
+  "selection":{
+     "LOCATION_highlight": {
+        "type": "multi",
+        "fields": ["LOCATION"],
+        "bind": "legend"
+      },
+      "TYPE_highlight": {
+        "type": "multi",
+        "fields": ["TYPE"],
+        "bind": "legend"
+      }
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "MEDIAN",
+      "type": "quantitative",
+      "title":"Median Bettereducation score",
+      "scale": {"zero": false}
+    },
+    "y": {
+      "field": "RATE",
+      "type": "quantitative",
+      "title":"Ratio of schools Bettereducation score > 90",
+      "scale": {"zero": false}
+    },
+    "color": {"field": "LOCATION", "type": "nominal","title":"Location"},
+    "shape": {"field": "TYPE", "type": "nominal","title":"Type"},
+    "size":{"value":80},
+    "opacity": {
+        "condition": {"selection": "TYPE_highlight", "value": 0.6},
+        "value": 0.2},
+    
+
+        
+    "tooltip":[
+        {
+          "field":"LOCATION", "type": "nominal", "title":"Location"
+      },
+      {
+        "field":"TYPE", "type": "nominal", "title":"Type"
+    },
+    {
+      "field":"MEDIAN", "type": "quantitative", "title":"Median Bettereducation score"
+    },
+    {
+      "field":"RATE", "type": "quantitative","format":".4f", "title":"Ratio of schools Bettereducation score > 90"
+    }
+    ]
+}
+}
