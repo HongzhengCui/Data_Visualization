@@ -1,4 +1,4 @@
-# Data Visualization Projects Readme
+# Data Visualization Projects README
 
 This README.md file provides an overview of two data visualization projects: "Michael Jordan, Kobe Bryant and Lebron James, who is the Goat of the NBA?" and "Educational level in Western Australia and New South Wales on 2019".
 
